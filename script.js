@@ -10,9 +10,9 @@ window.speechSynthesis.onvoiceschanged = () => {
     speech.voice = voices[0];
     voices.forEach((voice, i) => (voiceSelect.options[i] = new Option(voice.name, i)));
 }
-voiceSelect.addEventListener("change", (e) => {
+voiceSelect.addEventListener("change", () => {
 
-    speech.voice = voices[e.target.value];
+    speech.voice = voices[voiceSelect.value];
 })
 
 
