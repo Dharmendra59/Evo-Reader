@@ -31,6 +31,12 @@ body {
     padding: 20px;
 }
 
+.logo {
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+}
+
 .right {
     gap: 10px;
     display: flex;
