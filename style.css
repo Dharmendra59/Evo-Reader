@@ -44,8 +44,8 @@ body {
 }
 
 h1 {
-    font-size: 45px;
-    font-weight: 500;
+    font-size: 50px;
+    font-weight: 600;
     margin-top: 50px;
     margin-bottom: 40px;
 }
@@ -104,4 +104,10 @@ input[type="file"] {
     font-weight: 500;
     border: 1px solid black;
     border: none;
+}
+
+@media(max-width: 400px) {
+    textarea {
+        width: 90%;
+    }
 }
