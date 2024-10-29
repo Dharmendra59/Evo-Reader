@@ -61,7 +61,7 @@ button {
     color: white;
     font-weight: 500;
     cursor: pointer;
-    font-size: 20px;
+    font-size: 1.2em;
 }
 
 input[type="file"] {
@@ -73,7 +73,7 @@ input[type="file"] {
 .custom-file-label {
     display: inline-block;
     cursor: pointer;
-    font-size: 20px;
+    font-size: 1.2em;
     padding: 10px 30px;
     border-radius: 10px;
     background-color: rgb(99, 96, 96);
