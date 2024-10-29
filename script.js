@@ -7,9 +7,15 @@ let voiceSelect = document.querySelector('select');
 window.speechSynthesis.onvoiceschanged = () => {
 
     voices = window.speechSynthesis.getVoices();
-    voiceSelect.innerHTML = voices
-        .map(voice => `<option value="${voice.name}">${voice.name} (${voice.lang})</option>`)
-        .join('');
+    speech.voice = voices[0];
+    voices.forEach(voice => {
+
+        let option = document.createElement('option');
+        option.value = voice.name;
+        option.innerText = `${voice.name} ${voice.lang}`;
+        voiceSelect.appendChild(option);
+
+    })
 }
 document.querySelector('button').addEventListener('click', () => {
 
