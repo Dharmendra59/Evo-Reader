@@ -12,9 +12,7 @@ body {
 }
 
 body {
-    min-height: 100vh;
-    width: 100%;
-    background-color: rgb(17, 17, 17);
+    background-color: rgb(39, 36, 36);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -29,14 +27,14 @@ h1 {
 }
 
 textarea {
-    height: 250px;
-    width: 600px;
+    height: 50%;
+    width: 60%;
     font-size: 20px;
     padding: 20px;
     border-radius: 10px;
     border: none;
     outline: none;
-    background-color: rgb(99, 96, 96);
+    background-color: rgb(182, 179, 179);
     color: white;
     resize: none;
     margin-bottom: 30px;
@@ -75,4 +73,30 @@ select {
     flex: 1;
     height: 50px;
     appearance: none;
+}
+
+input {
+    font-size: 20px;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: white;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+input[type="file"] {
+    opacity: 0;
+    position: absolute;
+    z-index: -1;
+}
+
+.custom-file-label {
+    display: inline-block;
+    cursor: pointer;
+    font-size: 20px;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: gray;
+    font-weight: 500;
+    border: 1px solid black;
 }
