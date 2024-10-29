@@ -27,7 +27,8 @@ body {
     justify-content: space-between;
     gap: 20px;
     position: fixed;
-    top: -40px;
+    top: -30px;
+    padding: 20px;
 }
 
 .right {
